@@ -93,7 +93,7 @@
 
 .texto>p {
     color: white;
-    font-size: 20px;
+    font-size: 22px;
     padding: 8px;
     text-align: justify;
     margin-top: 15px;
@@ -165,4 +165,11 @@
     height: 40px;
     width: 80px;
     padding: 7px;
+}
+
+footer {
+    color: rgb(13, 10, 54);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 10px;
+    font-weight: bold;
 }
