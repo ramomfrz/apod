@@ -1,0 +1,168 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.envolver {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #0E1428, #222E50, #E0A890);
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#bg::before {
+    content: " ";
+    z-index: 2;
+    background-color: #222E50;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+
+#stars {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    animation-iteration-count: infinite;
+    animation-name: twinkle;
+}
+
+.star-a {
+    top: 50px;
+    left: 50px;
+    animation-duration: 1s;
+}
+
+.star-b {
+    top: 100px;
+    left: 400px;
+    animation-duration: 0.8s;
+}
+
+.star-c {
+    top: 80px;
+    right: 700px;
+    animation-duration: 0.75s;
+}
+
+.star-d {
+    top: 50px;
+    right: 400px;
+    animation-duration: 1.1s;
+}
+
+.star-e {
+    top: 60px;
+    right: 100px;
+    animation-duration: 0.6s;
+}
+
+@keyframes twinkle {
+    50% {
+        transform: scale(0.5);
+        opacity: 0.5;
+    }
+}
+
+.tela {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.texto>p {
+    color: white;
+    font-size: 20px;
+    padding: 8px;
+    text-align: justify;
+    margin-top: 15px;
+}
+
+.envolver>h1 {
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 40px;
+    padding: 15px;
+}
+
+.containerInfo {
+    width: 600px;
+    height: 500px;
+    padding: 0px 5px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.48);
+}
+
+#retornoResultado {
+    width: 600px;
+    height: 500px;
+    padding: 0px 5px;
+    overflow: hidden;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.0);
+}
+
+#texto {
+    color: beige;
+    font-size: 25px;
+    position: absolute;
+    top: 15px;
+    z-index: 10;
+    left: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#fotoResultado {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.pesquisaData {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.pesquisaData>input {
+    padding: 7px;
+}
+
+.pesquisar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.pesquisar>input {
+    height: 40px;
+    width: 80px;
+    padding: 7px;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Foto astronômica do dia</title>
+</head>
+
+<body>
+    <div class="envolver">
+        <div id="bg"></div>
+        <div id="stars" class="star-a"></div>
+        <div id="stars" class="star-b"></div>
+        <div id="stars" class="star-c"></div>
+        <div id="stars" class="star-d"></div>
+        <div id="stars" class="star-e"></div>
+        <h1>Foto astronômica do dia</h1>
+
+        <div class="tela">
+
+            <form class="containerInfo">
+                <div class="texto">
+                    <p> O universo é o conjunto de todas as coisas que existem fisicamente, sendo o espaço,
+                        o tempo e as diversas formas de matéria como planetas, estrelas, galáxias e os componentes
+                        do espaço intergaláctico. Aqui neste site será possível visualizar vídeos ou imagens do
+                        universo correspondentes a data escolhida. Para realizar a pesquisa, basta pesquisar a
+                        data desejada. Lembrando que a data mínima de pesquisa corresponde ao dia 16/06/1995 - dia
+                        em que a primeira foto foi postada pela NASA - e a data máxima corresponde ao dia atual.</p>
+                </div>
+                <div class="pesquisaData">
+                    <input id="dataEntrada" type="date" min="1995-06-16"></input>
+                </div>
+                <div class="pesquisar">
+                    <input type="submit" id="pesquisar" value="Pesquisar">
+                </div>
+
+            </form>
+
+            <div id="retornoResultado">
+
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
